@@ -1,4 +1,9 @@
 # webpack-delete-after-emit
+
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/gsdnano/webpack-delete-after-emit/master/LICENSE)
+[![Github All Releases](https://img.shields.io/github/downloads/gsdnano/webpack-delete-after-emit/total.svg)](https://github.com/gsdnano/webpack-delete-after-emit)
+[![npm](https://img.shields.io/npm/v/webpack-delete-after-emit.svg)](https://www.npmjs.com/package/webpack-delete-after-emit)
+
 Deletes globs after webpack is done emitting files. Used for cleaning up post-webpack for deployments.
 
 # Installation

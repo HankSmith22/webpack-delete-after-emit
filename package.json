@@ -1,0 +1,12 @@
+{
+  "name": "webpack-delete-after-emit",
+  "version": "1.0.0",
+  "description": "Deletes globs after webpack is done emitting files. Used for cleaning up post-webpack for deployments.",
+  "main": "index.js",
+  "keywords": [],
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.0.1",
+    "glob": "^7.1.2"
+  }
+}

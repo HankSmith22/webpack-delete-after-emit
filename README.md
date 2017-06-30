@@ -16,7 +16,7 @@ Add to plugins section of webpack.
 
 # Options
 
-* `globs` Array of file globs ( https://github.com/isaacs/node-glob ).
+* `globs` Array of file globs ( https://www.npmjs.com/package/glob ).
 * `Verbose` Verbose output.
 * `doStats` Outputs a stats file.
 * `statsPath` Relative to the webpack output folder, the stats file path. Only used if doStats is set to true.

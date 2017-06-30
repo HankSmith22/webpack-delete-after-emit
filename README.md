@@ -8,15 +8,26 @@ Install via NPM.
     npm i -D webpack-delete-after-emit
 
 # Usage
-Add to plugins section of webpack.
+Require and add to plugins section of webpack.
+
+    const WebpackDeleteAfterEmit = require('webpack-delete-after-emit');
+    
+    new WebpackDeleteAfterEmit({
+        globs:['*.debug.js']
+    })
+    
+With some  options
 
     new WebpackDeleteAfterEmit({
-        globs:[('*.js')]
-    }),
+        globs:['*.debug.js'],
+        verbose: true,
+        doStats: true,
+        dryRun: false
+    })
 
 # Options
 
-* `globs` Array of file globs ( https://www.npmjs.com/package/glob ).
+* `globs` Array of file globs ( https://www.npmjs.com/package/glob ). Default is `[]`
 * `Verbose` Verbose output.
 * `doStats` Outputs a stats file.
 * `statsPath` Relative to the webpack output folder, the stats file path. Only used if doStats is set to true.

@@ -18,7 +18,7 @@ Require and add to plugins section of webpack.
     const WebpackDeleteAfterEmit = require('webpack-delete-after-emit');
     
     new WebpackDeleteAfterEmit({
-        globs:['*.debug.js']
+        globs:['*.debug.js'] //Relative to webpack output path
     })
     
 With some  options
@@ -32,7 +32,7 @@ With some  options
 
 # Options
 
-* `globs` Array of file globs ( https://github.com/isaacs/node-glob ). Array default is `[]`
+* `globs` Array of [globs](https://github.com/isaacs/node-glob), relative to webpack output path. Array default is `[]`
 * `Verbose` Verbose output. Boolean default is `false`
 * `doStats` Outputs a stats file. Boolean default is `false`
 * `statsPath` Relative to the webpack output folder, the stats file path. Only used if doStats is set to true. String default is `./dist/stats-webpack-delete-after-emit.json`

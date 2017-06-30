@@ -27,8 +27,12 @@ With some  options
 
 # Options
 
-* `globs` Array of file globs ( https://www.npmjs.com/package/glob ). Array default is `[]`
+* `globs` Array of file globs ( https://github.com/isaacs/node-glob ). Array default is `[]`
 * `Verbose` Verbose output. Boolean default is `false`
 * `doStats` Outputs a stats file. Boolean default is `false`
 * `statsPath` Relative to the webpack output folder, the stats file path. Only used if doStats is set to true. String default is `./dist/stats-webpack-delete-after-emit.json`
 * `dryRun` If true will not delete files. Boolean default is `false`
+
+# Misc
+
+Common usage is post webpack cleansing for automatic one-command build & deployment for static websites hosted on S3.

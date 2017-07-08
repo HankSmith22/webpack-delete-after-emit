@@ -1,3 +1,9 @@
+# webpack-delete-after-emit
+######################
+lib/tests/results/*
+lib/tests/temp/*
+*.txt
+
 # Private #
 ######################
 *.ppk
@@ -15,7 +21,23 @@
 *.kdbx
 *.pkey
 *.key
-*.txt
+*.snyk
+.retireignore.json
+
+# Dependency directories #
+######################
+node_modules/
+jspm_packages/
+bower_components/
+typings/
+
+# VS Code #
+######################
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
 
 # Logs #
 ######################
@@ -48,10 +70,6 @@ coverage
 ######################
 .grunt
 
-# Bower dependency directory (https://bower.io/) #
-######################
-bower_components
-
 # node-waf configuration #
 ######################
 .lock-wscript
@@ -59,15 +77,6 @@ bower_components
 # Compiled binary addons (http://nodejs.org/api/addons.html) #
 ######################
 build/Release
-
-# Dependency directories #
-######################
-node_modules/
-jspm_packages/
-
-# Typescript v1 declaration files #
-######################
-typings/
 
 # Optional npm cache directory #
 ######################
